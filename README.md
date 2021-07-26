@@ -6,6 +6,6 @@ All pass filters can be cascaded to produce a more desirable phase response. A p
 
 ## Results
 Results of the optimization are found in the figure below. After six iterations, the addition of all pass stages ceased to make the group delay more constant. 
-![Alt text](img/group_delay_seq.png?raw=true "Group Delay After Adding AP Systems" | width=48)
+![Alt text](img/group_delay_seq.png?raw=true "Group Delay After Adding AP Systems")
 The band pass filter cascaded with the all pass system system plots does not visually show much improvement in the filtering performance 
-![Alt text](img/hd_filt.jpg?raw=true "Original Signal Before and After Filtering with Modified System" | width=48)
+![Alt text](img/hd_filt.jpg?raw=true "Original Signal Before and After Filtering with Modified System")
