@@ -5,3 +5,7 @@ Electrocardiograph (ECG) systems measure electrical activity of muscle contracti
 All pass filters can be cascaded to produce a more desirable phase response. A parameter sweep over phase angle and radius $r$ was carried out to create a range of pole/reciprocal zero locations. Phase angle ranged from 0 to \pi with an increment of .05 and r from 0 to 1 with an increment of .01. The geometric mean provided better results during optimization testing than the arithmetic mean. For each iteration of the parameter sweep, \mu is calculated for the cascade of the original band pass with this candidate all pass. After each sweep, the all pass filter that produced the minimum \mu and is below a certain threshold value is added as a stage to the all pass system. The process is then repeated with this new band pass all pass transfer function. The goal is to progressively make the group delay more constant in the frequency band of interest until it meets a sufficient exit condition. 
 
 ## Results
+Results of the optimization are found in the figure below. After six iterations, the addition of all pass stages ceased to make the group delay more constant. 
+![Alt text](img/group_delay_seq.png?raw=true "Group Delay After Adding AP Systems")
+The band pass filter cascaded with the all pass system system plots does not visually show much improvement in the filtering performance 
+![Alt text](img/hd_filt.jpg?raw=true "Original Signal Before and After Filtering with Modified System")
